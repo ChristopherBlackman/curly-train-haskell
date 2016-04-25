@@ -1,5 +1,5 @@
 build:
-	ghc -O -o Fac Fac.hs
+	ghc -O -o Fib Fib.hs
 	ghc -O -o Main Main.hs
 clean:
 	rm -f Main
