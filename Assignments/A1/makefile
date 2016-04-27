@@ -5,7 +5,7 @@ build:
 	ghc -O -o Main Main.hs
 	
 clean:
-	rm -f a1
+	rm -f Main
 	rm -f *.hi
 	rm -f *.o
 run:

@@ -48,6 +48,8 @@ luhn n
 -- Towers of Hanoi for three pegs
 type Peg = String
 type Move = (Peg, Peg)
-
+--move n-1 from a to b
 hanoi :: Integer -> Peg -> Peg -> Peg -> [Move]
-hanoi = undefined
+hanoi 0 _ _ _ = []
+hanoi n a b c = (hanoi (n-1 ) a b c) ++ [(a,c)] ++ (hanoi (n-1) b c a)
+
