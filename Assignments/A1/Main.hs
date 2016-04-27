@@ -1,4 +1,4 @@
-Module Main(main) where
+module Main where
 import HW01
 
-main = print(luhn(12121))
+main = print (luhn 111112)
